@@ -9,12 +9,11 @@ public class Task3 {
                 double a = s.nextDouble();
                 double b = s.nextDouble();
                 double div = a / b;
-                if (b > 0) {
-                    System.out.println(div);
-                }
                 if ( b == 0) {
                     System.out.println("Деление на 0");
+                    continue;
                 }
+                System.out.println(div);
             }
     }
 }
