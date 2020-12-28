@@ -22,47 +22,30 @@ public class Task1 {
         System.out.println();
         System.out.println("Информация о массиве:");
         System.out.println("Длина массива: " + n);
-
-        int a = 0;
-        int b = 0;
-        for(int c:arr) {
-            if (c > 8) {
-                a += c;
-                b = a / c;
-            }
-        }
-        System.out.println("Количестве чисел больше 8: " + b);
-
-        int d = 0;
-        int e = 0;
-        for(int f:arr) {
-            if (f == 1) {
-                d += f;
-                e = d / f;
-            }
-        }
-        System.out.println("Количестве чисел равных 1: " + e);
-
-        int h = 0;
-        for(int k:arr) {
-            if (k % 2 == 0) {
-                h++;
-            }
-        }
-        System.out.println("Количестве четных чисел: " + h);
-
-        int l =0;
-        for(int m:arr) {
-            if (m % 2 != 0) {
-                l++;
-            }
-        }
-        System.out.println("Количестве нечетных чисел: " + l);
-
+        int over8 = 0;
+        int one = 0;
+        int even = 0;
+        int odd = 0;
         int sum = 0;
-        for (int x:arr) {
+        for(int x:arr) {
+            if (x > 8) {
+                over8++;
+            }
+            if (x == 1) {
+                one++;
+            }
+            if (x % 2 == 0) {
+                even++;
+            }
+            if (x % 2 != 0) {
+                odd++;
+            }
             sum += x;
         }
+        System.out.println("Количестве чисел больше 8: " + over8);
+        System.out.println("Количестве чисел равных 1: " + one);
+        System.out.println("Количестве четных чисел: " + even);
+        System.out.println("Количестве нечетных чисел: " + odd);
         System.out.println("Сумма всех элементов массива: " + sum);
     }
 }
