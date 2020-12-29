@@ -46,6 +46,6 @@ public class Car {
         } else {
             System.out.println("Неверное значение");
         }
-        return yearDifference;
+        return year;
     }
 }
