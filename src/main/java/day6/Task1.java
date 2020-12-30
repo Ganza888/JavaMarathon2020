@@ -6,7 +6,7 @@ public class Task1 {
         Car car = new Car();
         car.info();
         car.setYear(2000);
-        car.yearDifference(1981);
+        car.yearDifference(2020);
         System.out.println();
         Motorbike bike = new Motorbike(2016,"Серый","F1Z");
         bike.info();

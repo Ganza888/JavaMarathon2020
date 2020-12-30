@@ -44,8 +44,8 @@ public class Car {
         if (inputYear <= year) {
             System.out.println("Разница " + yearDifference + " лет");
         } else {
-            System.out.println("Неверное значение");
+            System.out.println("Разница " + (-yearDifference) + " лет");
         }
-        return year;
+        return yearDifference;
     }
 }
