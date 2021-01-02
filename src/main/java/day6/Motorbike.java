@@ -28,12 +28,6 @@ public class Motorbike {
     }
 
     public int yearDifference(int inputYear) {
-        int yearDifference = year - inputYear;
-        if (inputYear <= year) {
-            System.out.println("Разница " + yearDifference + " лет");
-        } else {
-            System.out.println("Неверное значение");
-        }
-        return yearDifference;
+        return Math.abs(year - inputYear);
     }
 }

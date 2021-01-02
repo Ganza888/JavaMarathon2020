@@ -7,9 +7,11 @@ public class Task1 {
         car.info();
         car.setYear(2000);
         car.yearDifference(2020);
+        System.out.println(car.yearDifference(2020));
         System.out.println();
         Motorbike bike = new Motorbike(2016,"Серый","F1Z");
         bike.info();
         bike.yearDifference(2010);
+        System.out.println(bike.yearDifference(2010));
     }
 }
