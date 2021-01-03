@@ -13,10 +13,11 @@ public class Task1 {
     }
     public static long measure2() {
         long st = System.nanoTime();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i <= 20000; i++){
-            StringBuilder sb = new StringBuilder(i + " ");
-            System.out.print(sb.toString());
+            sb.append(i).append(" ");
         }
+        System.out.print(sb.toString());
         long en = System.nanoTime();
         long time2 = en - st;
         return time2;
