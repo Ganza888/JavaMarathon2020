@@ -1,7 +1,5 @@
 package day7;
 
-import java.sql.SQLOutput;
-
 public class Player {
     private int stamina;
     private final int MAX_STAMINA = 100;
