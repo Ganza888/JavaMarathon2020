@@ -4,8 +4,6 @@ public class Triangle extends Figure {
     private double aLength;
     private double bLength;
     private double cLength;
-    private double area;
-    private double perimeter;
 
     public Triangle(int aLength, int bLength, int cLength, String color) {
         super(color);
@@ -16,13 +14,12 @@ public class Triangle extends Figure {
 
     @Override
     public double area() {
-        area = Math.sqrt(perimeter/2 * (perimeter/2 - aLength) * (perimeter/2 - bLength) * (perimeter/2 - cLength));
-        return area;
+        double p = ((aLength + bLength + cLength) / 2);
+        return Math.sqrt(p * (p - aLength) * (p - bLength) * (p - cLength));
     }
 
     @Override
     public double perimeter() {
-        perimeter = (aLength + bLength + cLength);
-        return perimeter;
+        return (aLength + bLength + cLength);
     }
 }
