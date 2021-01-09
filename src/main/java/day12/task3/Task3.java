@@ -32,7 +32,7 @@ public class Task3 {
         Collections.shuffle(musicBands);
         System.out.println(musicBands);
 
-        groupsAfter2000(musicBands);
+        System.out.println(groupsAfter2000(musicBands));
     }
 
     public static List<MusicBand> groupsAfter2000(List<MusicBand> musicBands){
@@ -42,7 +42,6 @@ public class Task3 {
                 groupsAfter2000.add(band);
             }
         }
-        System.out.println(groupsAfter2000);
         return groupsAfter2000;
     }
 }
